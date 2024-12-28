@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Survey Form</h1>
+    <p>My first freeCodeCamp project</p>
+
+    <div class="form">
+        <div class="name">
+            <label for="name" id="name-label">Name</label>
+            <input id="name" type="text" required placeholder="Enter your name">
+        </div>
+        <div class="email">
+            <label for="email" id="email-label">Email</label>
+            <input id="email" type="text" required placeholder="Enter your email">
+        </div>
+        <div class="age">
+            <label for="age" id="age-label">Age (optional)</label>
+            <input id="age" type="text" required placeholder="Enter your age">
+        </div>
+        <div class="dropdown">
+            <label for="year" id="year-label">What is your year level?</label>
+            <select id="year" name="year" required>
+                <option value="" disabled selected>Select your year level</option>
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+        <div class="satisfaction">
+            <label id="satisfaction-label">How satisfied are you?</label>
+            <div class="radio-buttons">
+                <label class="container">Very Satisfied
+                    <input type="radio" id="very-satisfied" name="satisfaction" value="very-satisfied" required>
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Satisfied
+                    <input type="radio" id="satisfied" name="satisfaction" value="satisfied">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Neutral
+                    <input type="radio" id="neutral" name="satisfaction" value="neutral">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Dissatisfied
+                    <input type="radio" id="dissatisfied" name="satisfaction" value="dissatisfied">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Very Dissatisfied
+                    <input type="radio" id="very-dissatisfied" name="satisfaction" value="very-dissatisfied">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="hobbies">
+            <label id="hobbies-label">Select your hobbies:</label>
+            <div class="checkbox-buttons">
+                <label class="container">Reading
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Traveling
+                    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Sports
+                    <input type="checkbox" id="sports" name="hobbies" value="sports">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Music
+                    <input type="checkbox" id="music" name="hobbies" value="music">
+                    <span class="checkmark"></span>
+                </label>
+                <label class="container">Gaming
+                    <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="message-form">
+            <label for="message" id="message-label">Your Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
